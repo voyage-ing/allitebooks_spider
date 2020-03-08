@@ -1,0 +1,183 @@
+2019-06-30 15:10:05 [scrapy.utils.log] INFO: Scrapy 1.5.2 started (bot: itEbooks_Scrapy)
+2019-06-30 15:10:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.5 |Anaconda, Inc.| (default, Apr 26 2018, 08:42:37) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 18.0.0 (OpenSSL 1.0.2o  27 Mar 2018), cryptography 2.2.2, Platform Darwin-18.5.0-x86_64-i386-64bit
+2019-06-30 15:10:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'itEbooks_Scrapy', 'CLOSESPIDER_PAGECOUNT': '10', 'CLOSESPIDER_TIMEOUT': '60', 'CONCURRENT_REQUESTS': 128, 'COOKIES_ENABLED': 'True', 'DOWNLOAD_DELAY': 1.5, 'LOG_FILE': 'logs/itEbooks_Scrapy/eBookSpider/2019-06-30T15_07_29.log', 'NEWSPIDER_MODULE': 'itEbooks_Scrapy.spiders', 'ROBOTSTXT_OBEY': 'False', 'SPIDER_MODULES': ['itEbooks_Scrapy.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'}
+2019-06-30 15:10:05 [scrapy.extensions.telnet] INFO: Telnet Password: bfe5c84a48d3c70f
+2019-06-30 15:10:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-30 15:10:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itEbooks_Scrapy.middlewares.My_UserAgent',
+ 'itEbooks_Scrapy.middlewares.ItebooksScrapyDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-30 15:10:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-30 15:10:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['itEbooks_Scrapy.pipelines.ItebooksScrapyPipeline']
+2019-06-30 15:10:05 [scrapy.core.engine] INFO: Spider opened
+2019-06-30 15:10:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-30 15:10:05 [eBookSpider] INFO: Spider opened: eBookSpider
+2019-06-30 15:10:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-06-30 15:10:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/digital-electronics-for-musicians/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/digital-electronics-for-musicians/>
+{'author': 'Alexandros Drymonitis',
+ 'category': 'Programming',
+ 'file_size': ' 17.8 MB',
+ 'isbn': ' 1484215842',
+ 'language': ' English',
+ 'pages': ' 516',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190629/Digital%20Electronics%20for%20Musicians.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Digital-Electronics-for-Musicians.jpg',
+ 'title': 'Digital Electronics for Musicians',
+ 'year': ' 2019'}
+2019-06-30 15:10:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.allitebooks.org/page/2/> from <GET http://www.allitebooks.org/page/2>
+2019-06-30 15:10:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/droid-x2-for-dummies/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/droid-x2-for-dummies/>
+{'author': 'Dan Gookin',
+ 'category': 'Hardware DIY',
+ 'file_size': ' 10.2 MB',
+ 'isbn': ' 1118148649',
+ 'language': ' English',
+ 'pages': ' 352',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190624/Droid%20X2%20For%20Dummies.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Droid-X2-For-Dummies-400x499.jpg',
+ 'title': 'Droid X2 For Dummies',
+ 'year': ' 2011'}
+2019-06-30 15:10:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/r3-corda-for-architects-and-developers/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/r3-corda-for-architects-and-developers/>
+{'author': 'Debajani Mohanty',
+ 'category': 'Computer Science Data Processing',
+ 'file_size': ' 5 MB',
+ 'isbn': ' 1484245288',
+ 'language': ' English',
+ 'pages': ' 135',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190625/R3%20Corda%20for%20Architects%20and%20Developers.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/R3-Corda-for-Architects-and-Developers.jpg',
+ 'title': 'R3 Corda for Architects and Developers',
+ 'year': ' 2019'}
+2019-06-30 15:10:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/practical-microservices-architectural-patterns/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/practical-microservices-architectural-patterns/>
+{'author': 'Binildas Christudas',
+ 'category': 'Java',
+ 'file_size': ' 33.3 MB',
+ 'isbn': ' 1484245008',
+ 'language': ' English',
+ 'pages': ' 902',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190626/Practical%20Microservices%20Architectural%20Patterns.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Practical-Microservices-Architectural-Patterns.jpg',
+ 'title': 'Practical Microservices Architectural Patterns',
+ 'year': ' 2019'}
+2019-06-30 15:10:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/practical-ui-patterns-for-design-systems/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/practical-ui-patterns-for-design-systems/>
+{'author': 'Diana MacDonald',
+ 'category': 'Programming',
+ 'file_size': ' 12 MB',
+ 'isbn': ' 1484249372',
+ 'language': ' English',
+ 'pages': ' 293',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190626/Practical%20UI%20Patterns%20for%20Design%20Systems.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Practical-UI-Patterns-for-Design-Systems.jpg',
+ 'title': 'Practical UI Patterns for Design Systems',
+ 'year': ' 2019'}
+2019-06-30 15:10:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/office-365-all-in-one-for-dummies/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/office-365-all-in-one-for-dummies/>
+{'author': 'Peter Weverka,Timothy L. Warner',
+ 'category': 'Office',
+ 'file_size': ' 57.7 MB',
+ 'isbn': ' 1119576245',
+ 'language': ' English',
+ 'pages': ' 800',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190625/Office%20365%20All-in-One%20For%20Dummies.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Office-365-All-in-One-For-Dummies.jpg',
+ 'title': 'Office 365 All-in-One For Dummies',
+ 'year': ' 2019'}
+2019-06-30 15:10:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/swift-5-for-absolute-beginners-5th-edition/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/swift-5-for-absolute-beginners-5th-edition/>
+{'author': 'Brad Lees,Gary Bennett,Stefan Kaczmarek',
+ 'category': 'Swift',
+ 'file_size': ' 15.4 MB',
+ 'isbn': ' 1484248678',
+ 'language': ' English',
+ 'pages': ' 360',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190627/Swift%205%20for%20Absolute%20Beginners,%205th%20Edition.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Swift-5-for-Absolute-Beginners.jpg',
+ 'title': 'Swift 5 for Absolute Beginners, 5th Edition',
+ 'year': ' 2019'}
+2019-06-30 15:10:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/pro-net-benchmarking/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/pro-net-benchmarking/>
+{'author': 'Andrey Akinshin',
+ 'category': '.NET',
+ 'file_size': ' 11.8 MB',
+ 'isbn': ' 1484249402',
+ 'language': ' English',
+ 'pages': ' 662',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190627/Pro%20.NET%20Benchmarking.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Pro-.NET-Benchmarking.jpg',
+ 'title': 'Pro .NET Benchmarking',
+ 'year': ' 2019'}
+2019-06-30 15:10:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/game-development-with-renpy/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:24 [scrapy.core.engine] INFO: Closing spider (closespider_pagecount)
+2019-06-30 15:10:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/game-development-with-renpy/>
+{'author': 'Robert Ciesla',
+ 'category': 'Python Game Programming',
+ 'file_size': ' 5.5 MB',
+ 'isbn': ' 1484249194',
+ 'language': ' English',
+ 'pages': ' 346',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190629/Game%20Development%20with%20Ren%20Py.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/Game-Development-with-Ren-Py.jpg',
+ 'title': 'Game Development with Ren’Py',
+ 'year': ' 2019'}
+2019-06-30 15:10:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/bbc-microbit-recipes/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.allitebooks.org/bbc-microbit-recipes/>
+{'author': 'Pradeeka Seneviratne',
+ 'category': 'Programming',
+ 'file_size': ' 14.8 MB',
+ 'isbn': ' 1484249127',
+ 'language': ' English',
+ 'pages': ' 352',
+ 'pdf_download_url': 'http://file.allitebooks.com/20190629/BBC%20microbit%20Recipes.pdf',
+ 'thumbnail': 'http://www.allitebooks.org/wp-content/uploads/2019/06/BBC-micro-bit-Recipes.jpg',
+ 'title': 'BBC micro:bit Recipes',
+ 'year': ' 2019'}
+2019-06-30 15:10:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.allitebooks.org/page/2/> (referer: http://www.allitebooks.org/)
+2019-06-30 15:10:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7297,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 85818,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 12,
+ 'downloader/response_status_count/301': 1,
+ 'finish_reason': 'closespider_pagecount',
+ 'finish_time': datetime.datetime(2019, 6, 30, 7, 10, 28, 690660),
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 24,
+ 'log_count/INFO': 9,
+ 'memusage/max': 57618432,
+ 'memusage/startup': 57618432,
+ 'request_depth_max': 2,
+ 'response_received_count': 12,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2019, 6, 30, 7, 10, 5, 924993)}
+2019-06-30 15:10:28 [scrapy.core.engine] INFO: Spider closed (closespider_pagecount)
